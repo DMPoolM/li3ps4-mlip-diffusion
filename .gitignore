@@ -5,3 +5,4 @@ runs/*
 !runs/smoke_test/
 runs/smoke_test/traj_*.extxyz
 *.model
+local/

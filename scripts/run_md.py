@@ -51,7 +51,8 @@ def main() -> None:
 
     meta = vars(a) | {"n_atoms": len(atoms),
                       "relaxed_cellpar": [round(float(x), 4) for x in relaxed_cell.cell.cellpar()]}
-    (out / "run_meta.json").write_text(json.dumps(meta, indent=2))
+    tag = "_".join(f"{T:.0f}K" for T in a.temps)
+    (out / f"run_meta_{tag}.json").write_text(json.dumps(meta, indent=2))
     print(f"relaxed cell: {meta['relaxed_cellpar']}  ->  {len(atoms)} atoms")
 
     for T in a.temps:
