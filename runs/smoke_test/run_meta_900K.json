@@ -1,0 +1,29 @@
+{
+  "temps": [
+    900.0
+  ],
+  "steps": 3500,
+  "equil_steps": 500,
+  "timestep": 2.0,
+  "interval": 25,
+  "supercell": [
+    1,
+    1,
+    2
+  ],
+  "model": "small",
+  "device": "cpu",
+  "relax_cell": false,
+  "cif": null,
+  "seed": 0,
+  "out": "runs/smoke_test",
+  "n_atoms": 64,
+  "relaxed_cellpar": [
+    12.993,
+    8.0458,
+    6.1377,
+    90.0,
+    90.0,
+    90.0
+  ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/*
+!runs/smoke_test/
+runs/smoke_test/traj_*.extxyz
+*.model
